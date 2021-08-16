@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:id="@+id/card_view">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="8dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="header"
+                android:id="@+id/header"
+                android:ellipsize="end"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginVertical="5dp"
+                android:textStyle="bold"
+                android:maxLines="3"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="body summary"
+                android:id="@+id/text_content"
+                android:textSize="18sp"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:layout_marginVertical="4dp"
+                android:maxLines="4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="news by @byyynews"
+                android:id="@+id/text_author"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+
+                android:maxLines="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="published at:"
+                android:id="@+id/text_time"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/image_source"
+            android:src="@color/black"
+            android:layout_weight="2"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="8dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
